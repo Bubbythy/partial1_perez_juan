@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medicoo</title>
+<style>
+  nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+  nav h4 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+  :root {
+    --bg: #eef1f5;
+    --ink: #1b2430;
+    --muted: #5b6776;
+    --btn: #ffffff;
+    --btn-hover: #1f4e79;
+    --btn-hover-ink: #ffffff;
+    --line: #c9d1db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151a21;
+      --ink: #e9edf2;
+      --muted: #9aa6b4;
+      --btn: #1e252e;
+      --btn-hover: #6aa7e0;
+      --btn-hover-ink: #0f141a;
+      --line: #313b47;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 20px;
+  }
+  header { text-align: center; margin-bottom: 40px; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin: 0 0 8px; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--muted); }
+  nav {
+    width: 100%;
+    max-width: 760px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  nav a {
+    display: block;
+    padding: 28px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--btn);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    transition: background .15s, color .15s, transform .15s;
+  }
+  nav a:hover, nav a:focus-visible {
+    background: var(--btn-hover);
+    color: var(--btn-hover-ink);
+    transform: translateY(-2px);
+    outline: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    nav a { transition: none; }
+    nav a:hover, nav a:focus-visible { transform: none; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Medicoo</h1>
+    <p>Elige una para entrar</p>
+  </header>
+<nav>
+  <h4>FLOWCHART SECTION</h4>
+  <a href="diagrama_general.html">Millonaire Idea</a>
+  <a href="gonzalez_clientes.html">Clients</a>
+  <a href="gonzalez_dinero.html">Money</a>
+</nav>
+
+<nav>
+  <h4>USE CASE DIAGRAM SECTION</h4>
+  <a href="consultar_precios.html">User action</a>
+  <a href="marketing.html">Marketing</a>
+  <a href="monetizacion.html">Monetizing</a>
+</nav>
+
+<h4>STUDENT:</h4>
+<h2>Maximiliano Gonzalez Alvarado</h2>
+<h5>EMAIL: maximiliano_3142250064@utd.com</h5>
+
+    <img src="image.jpeg" alt="Foto del estudiante" width="400" height="400">
+
+</body>
+</html>
+</html>
